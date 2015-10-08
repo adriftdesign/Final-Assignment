@@ -1,20 +1,194 @@
-/*
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
 header {
-    height: 280px;
-    background: #eee url("../img/coffee-beans.jpg") top center no-repeat fixed;
+	position: fixed;
+	height: 280px;
+	width: 100%;
+	background: white url("images/DAY%202%20BRISBANE%20001.jpg") top center no-repeat fixed;
+}
+
+body {
+	font-size: 18px;
+	background-color: lightgray;
+}
+
+header {
+	position: fixed;
+	max-height: 5rem;
+	max-width: 80rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem
+}
+
+h3 {
+	font-size: 2rem;
+	font-style: italic;
+	color: white;
+	text-align: center;
+	padding: 6em;
+}
+
+small {
+	text-align: center;
 }
 
 h1,
 h2,
-nav {
-    text-align: center;
-    margin-top: 0px;
+.nav {
+	text-align: center;
+	margin-top: 0px;
 }
 
-nav a {
-    display: inline-block;
+.suites {
+	text-align: center;
+	max-height: 20em;
+	padding: 1em;
+}
+
+.centre-managers-quote {
+	background-color: green;
+	min-height: 20em;
+	text-align: justify;
+}
+
+p .centre-managers-quote {
+	font-size: 2px;
+}
+
+img {
+	width: 100%;
+	margin: 0;
+}
+
+.rvgacp {
+	width: 15rem;
+	float: left;
+}
+
+.acp {
+	width: 15rem;
+	float: right;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 80rem;
+	width: 90%;
+	color: gray;
+	background-color: white;
+}
+
+.content {
+	max-width: 80rem;
+	background-color: white;
+	height: 5rem;
+}
+
+.row {
+	margin: 0;
+	background-color: white;
+}
+
+.full {
+	width: 100%;
+	float: left;
+}
+
+.full img {
+	margin-left: 2rem;
+	width: 15rem;
+	float: left;
+}
+
+.two-thirds {
+	width: 66.7%;
+}
+
+.one-third {
+	background-color: purple;
+	width: 33.3%;
+	float: right;
+}
+
+.half {
+	display: inline-block;
+	width: 50%;
+	margin: 1rem;
+	background-color: white;
+}
+
+.third {
+	background-color: aquamarine;
+	width: 33.3%;
+	float: left;
+}
+
+.quarter {
+	width: 25%;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nav {
+	font-size: 1rem;
+	margin: 0 5% 0 5%;
+}
+
+.nav span:hover {
+	font-style: oblique;
+}
+
+.three-quarter .nav span {
+	width: 75%;
+	float: left;
+	display: inline-block;
+	width: 100px;
+	border-radius: .5rem;
+	text-align: center;
+	margin: .5rem;
+}
+
+.three-quarter .row {
+	float: right;
+}
+
+.features {
+	float: right;
+}
+
+
+/*
+.home .locations .about-us {
+	text-align: center;
     height: 60px;
-    width: 60px;
+    width: 200px;
     text-decoration: none;
     background-color: #968;
     padding: 15px;
@@ -22,10 +196,28 @@ nav a {
     border: #eed;
     border-radius: 60px;
     line-height: 60px;
+} */
+
+.foot {
+	max-width: 80rem;
+	background-color: #191919;
 }
 
-img {
-    display: block;
-    margin: 15px auto 25px auto;
+footer {
+	height: 5rem;
+	width: 90%;
+	margin: 0 5% 0 5%;
+	padding-top: 2rem;
+	background-color: #191919;
 }
-*/
+
+footer a {
+	text-decoration: none;
+	text-align: justify;
+	color: white;
+}
+
+footer span {
+	color: white;
+	float: right;
+}
