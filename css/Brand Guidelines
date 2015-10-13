@@ -3,7 +3,7 @@ Fonts Helvetica, Clarendon, Arial, Palatino. Try and source from google fonts so
 All of this needs to be designed within the ACP Brand Guidelines.
 Will need to have a good look at the layout before specifying size ect.
 Hex colour pallette
-cool grey 9 # 747679
+cool grey 9 #747679
 PMS 185 #e70033
 PMS 1805 #af292e
 PMS 367 #a3d869
@@ -14,3 +14,4 @@ PMS 714 #fcb073
 PMS 716 #f07b05
 PMS 7499 #eee8c5
 90% black #191919
+15% black #d9d9d9

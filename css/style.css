@@ -20,37 +20,66 @@
 	*zoom: 1;
 }
 
+
+/* 
+
+@font-face {
+	font-family: clarendon;
+	src: url("../fonts/clarendon.ttf");
+}
+
+ADD IN FONTS FROM WORK */
+
+#spiritual {
+	background: url("../images/DAY%202%20BRISBANE%20435.jpg") center center no-repeat;
+	width: 100%;
+	height: 60rem;
+}
+
+#spiritual h2 {
+	position: relative;
+	left: 35rem;
+	top: 22rem;
+	width: 25rem;
+}
+
 header {
 	position: fixed;
 	height: 280px;
-	width: 100%;
-	background: white url("images/DAY%202%20BRISBANE%20001.jpg") top center no-repeat fixed;
-}
-
-body {
-	font-size: 18px;
-	background-color: lightgray;
-}
-
-header {
-	position: fixed;
+	margin: 0 5%;
+	width: 90%;
+	background: #fff url("images/DAY%202%20BRISBANE%20001.jpg") top center no-repeat fixed;
 	max-height: 5rem;
 	max-width: 80rem;
 }
 
+body {
+	font-size: 20px;
+	background-color: #d9d9d9;
+}
+
 h1 {
 	font-size: 2rem;
-	vertical-align: middle;
 }
 
 h2 {
-	font-size: 1.5rem
+	font-size: 1.5rem;
+	color: #55a51c;
+	padding: 1rem;
+}
+
+.how-to-enter h2 {
+	color: #fff;
+}
+
+.three-fifth h2 {
+	color: #55a51c;
 }
 
 h3 {
 	font-size: 2rem;
 	font-style: italic;
-	color: white;
+	color: #fff;
 	text-align: center;
 	padding: 6em;
 }
@@ -62,7 +91,6 @@ small {
 h1,
 h2,
 .nav {
-	vertical-align: middle;
 	text-align: center;
 	margin-top: 0px;
 }
@@ -74,7 +102,7 @@ h2,
 }
 
 .centre-managers-quote {
-	background-color: green;
+	background-color: #55a51c;
 	min-height: 20em;
 	text-align: justify;
 }
@@ -89,63 +117,105 @@ img {
 }
 
 .rvgacp {
-	vertical-align: middle;
-	width: 15rem;
 	float: left;
 }
 
 .acp {
-	width: 15rem;
-	float: right;
+	float: left;
 }
 
 .container {
 	margin: 0 auto;
 	max-width: 80rem;
 	width: 90%;
-	color: gray;
-	background-color: white;
+	color: #191919;
+	background-color: #fff;
 }
 
 .content {
+	position: fixed;
+	margin: 0 auto;
 	max-width: 80rem;
-	background-color: white;
+	width: 100%;
+	background-color: #fff;
 	height: 5rem;
+	z-index: 25;
+}
+
+.centre {
+	display: inline-block
 }
 
 .row {
+	display: inline-block;
 	margin: 0;
-	background-color: white;
+	background-color: #fff;
 }
 
 .full {
 	width: 100%;
 	float: left;
+	padding: 1.5rem;
+}
+
+.how-to-enter {
+	background-color: #55a51c;
+	color: #fff;
+	min-height: 22rem;
+}
+
+.how-to-enter .half {
+	background-color: #55a51c;
+	width: 50%;
 }
 
 .full img {
-	margin-left: 2rem;
-	width: 15rem;
+	width: 10rem;
 	float: left;
 	max-height: 5rem;
-	vertical-align: middle;
 }
 
-.two-thirds {
-	width: 66.7%;
+.three-fifth .full {
+	background-color: #eee8c5;
+	padding: 1rem;
 }
 
-.one-third {
-	background-color: purple;
-	width: 33.3%;
-	float: right;
+ol {
+	list-style: disc;
+	padding-left: 2rem;
+}
+
+li {
+	color: #55a51c;
+	/* bullet color */
+}
+
+li span {
+	color: #191919;
+	/* text color */
+}
+
+.three-fifth {
+	float: left;
+	width: 60%;
+	padding: 3rem;
+	background-color: #55a51c;
+	color: #fff;
+}
+
+.two-fifth {
+	width: 40%;
+	padding: 3rem;
+	padding-top: 4rem;
+	float: left;
+	background-color: #fff;
 }
 
 .half {
-	display: inline-block;
+	float: left;
 	width: 50%;
-	margin: 1rem;
-	background-color: white;
+	padding: 3rem;
+	background-color: #fff;
 }
 
 .third {
@@ -158,11 +228,23 @@ img {
 	width: 25%;
 	float: left;
 	text-align: center;
-	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.row .quarter {
+	height: 5rem;
+}
+
+.content .half {
+	text-align: right;
+	padding: 0;
+	float: left;
 }
 
 .nav {
-	vertical-align: middle;
+	display: inline-block;
+	text-align: right;
 	font-size: 1rem;
 }
 
@@ -170,13 +252,11 @@ a:hover {
 	color: #fcb073;
 }
 
-.nav span:hover {
-	vertical-align: middle;
-	font-style: oblique;
+.nav span {
+	cursor: pointer;
 }
 
-.three-quarter .nav span {
-	vertical-align: middle;
+.three-quarter span {
 	max-height: 5rem;
 	width: 75%;
 	float: left;
@@ -188,8 +268,8 @@ a:hover {
 }
 
 .three-quarter .row {
-	width: 70%;
-	float: right;
+	width: 75%;
+	float: left;
 	margin-right: 5%;
 }
 
@@ -197,20 +277,9 @@ a:hover {
 	float: right;
 }
 
-
-/*
-.home .locations .about-us {
-	text-align: center;
-    height: 60px;
-    width: 200px;
-    text-decoration: none;
-    background-color: #968;
-    padding: 15px;
-    color: #eed;
-    border: #eed;
-    border-radius: 60px;
-    line-height: 60px;
-} */
+#home {
+	margin-top: 5rem;
+}
 
 .foot {
 	max-width: 80rem;
@@ -233,7 +302,7 @@ footer a {
 }
 
 footer span {
-	color: white;
+	color: #fff;
 	float: right;
 	margin-right: 1rem;
 }
