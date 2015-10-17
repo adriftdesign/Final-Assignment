@@ -9,6 +9,8 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/slick-theme.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,128 +21,166 @@
 		<header class="clearfix">
 			<div class="col quarter">
 				<div class="col full">
-					<h1><img class="acp"  src="images/logos/75mm%20SAACP%20Logo%20shield%2012mm%20SPOT.png" alt="Aged Care Plus Logo"></h1>
+					<h1><img class="acp" src="images/40-pix/Logos-40pix-high-300-01-copy.png" alt="Aged Care Plus Logo"></h1>
 				</div>
 			</div>
 			<div class="col quarter">
 				<div class="col full">
 					<!-- would be better to do the lockups as html to help SEO as the logo doesn't mena anything. -->
-					<img class="rvgacp" src="images/logos/RiverviewGardens-ResidentialAgedCare-Colour.png" alt="Riverview Gardens Aged Care Plus Centre logo">
+					<div class="logo">
+
+						<img class="rvgacp" src="images/40-pix/Logos-40pix-high-300-02-copy.png" alt="Riverview Gardens Aged Care Plus Centre logo">
+					</div>
 				</div>
 			</div>
 			<div class="col half">
 				<div class="row">
-					<!-- make this a simple nav -->
-					<nav>
-						<a href="#Menu">Menu</a>
-					</nav>
-					<nav>
-						<a href="locations.html">Locations</a>
-					</nav>
-					<!-- have a drop down nav come up within this -->
+					<ul id="navigation" class="nav">
+						<li><a href="#home">Home</a></li>
+						<li><a href="index.html">Locations</a></li>
+						<li id="menu-show"><a href="#menu-bar">Menu</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</header>
+		<div id="menu-bar">
+			<ul class="nav">
+				<li><a href="#about-us">About us</a></li>
+				<li><a href="#about-us">Key features</a></li>
+				<li><a href="#lifestyle">Suites</a></li>
+				<li><a href="#lifestyle">Lifestyle</a></li>
+				<li><a href="#spirit">Spiritual</a></li>
+				<li><a href="#spirit">Team</a></li>
+				<li><a href="#how-to-enter">How to enter</a></li>
+			</ul>
+		</div>
 	</div>
+
 	<!-- end of content -->
+	<!-- looking to add in a menu drop down here, This code is from the relaxr blog page with the smooth scroll. -->
+
 	<div class="container clearfix">
 
 		<!-- front page including Aged Care Plus logo and locations page text with a user login -->
 		<div id="home">
-			<img src="images/DAY%202%20BRISBANE%20001.jpg" alt="hero image riverview gardens">
-		</div>
-		<div class="centre about clearfix">
-			<div class="two-fifth">
-				<h2>About Riverview Gardens</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, saepe distinctio praesentium aliquam molestias quis debitis eos fuga iusto deserunt laudantium enim voluptate eum sequi, maiores ea inventore voluptatibus ad?</p>
+			<div id="filter-carousel" class="carousel">
+				<div data-category="outdoors">
+					<img src="images/DAY-2-BRISBANE-001.jpg" alt="hero image riverview gardens">
+				</div>
+				<div data-category="outdoors">
+					<img src="images/DAY-2-BRISBANE-168.jpg" alt="hero image riverview gardens">
+				</div>
+				<div data-category="buildings">
+					<img src="images/DAY-2-BRISBANE-307.jpg" alt="hero image riverview gardens">
+				</div>
+				<!-- if i try and add the slick auto play it is not working and it changes the how to enter div below and takes the footer out of play  -->
+
+		<!--<img src="images/DAY-2-BRISBANE-001.jpg" alt="hero image riverview gardens">-->
 			</div>
-			<div class="three-fifth">
-				<div class="full">
-					<h2>Key Features</h2>
-					<ol>
-						<li>Fully accredited and government approved aged care centre</li>
-						<li>Offering all levels of care including respite care and secure dementia care</li>
-						<li>Single rooms, most with ensuite</li>
-						<li>Emergency call system in all rooms</li>
-						<li>24 hour access to compassionate care and nursing staff</li>
-						<li>Freshly prepared meals cooked in house by our professional catering team</li>
-						<li>Range of personalised lifestyle and wellbeing services</li>
-						<li>Maintained gardens and vegetable patch</li>
-						<li>Access to Chaplain for spiritual and emotional wellbeing</li>
-						<li>Regular Chapel services for various faiths</li>
-					</ol>
+			<div id="about-us" class="centre about clearfix">
+				<div class="two-fifth">
+					<h2>About Riverview Gardens</h2>
+					<p>Riverview Gardens Aged Care Plus Centre is a vibrant aged care centre originally built in 1989 and later refurbished in 1997 and 2009.</p>
+					<p>Located in Ipswich it has easy access to local shops and amenities.</p>
+				</div>
+				<div class="three-fifth">
+					<div class="full">
+						<h2>Key Features</h2>
+						<ol>
+							<li>Fully accredited and government approved aged care centre</li>
+							<li>Offering all levels of care including respite care and secure dementia care</li>
+							<li>Single rooms, most with ensuite</li>
+							<li>Emergency call system in all rooms</li>
+							<li>24 hour access to compassionate care and nursing staff</li>
+							<li>Freshly prepared meals cooked in house by our professional catering team</li>
+							<li>Range of personalised lifestyle and wellbeing services</li>
+							<li>Maintained gardens and vegetable patch</li>
+							<li>Access to Chaplain for spiritual and emotional wellbeing</li>
+							<li>Regular Chapel services for various faiths</li>
+						</ol>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="volunteer">
-			<img src="images/DAY%202%20BRISBANE%20273.jpg" alt="hero image riverview gardens">
-		</div>
-		<section class="centre-managers-quote">
-			<div>
-				<h3>“I welcome you to join us at Riverview Gardens Aged Care Plus Centre and explore our lovely grounds. Meet our wonderful team and experience the care and community provided in our Centre.”<br><br><small>Darryl Tocchetti, Centre Manager</small></h3>
+			<div id="volunteer">
+				<img src="images/DAY-2-BRISBANE-273.jpg" alt="hero image riverview gardens">
 			</div>
-		</section>
-		<img src="images/DAY%202%20BRISBANE%20119.jpg" alt="entertainment">
-		<section class="centre row clearfix">
-			<div class="half">
-				<h2>Suites</h2>
-				<p>The single rooms at Riverview Gardens Aged Care Plus Centre have been designed with residents’ comfort and security in mind. All rooms are fully furnished and have a telephone connection and television connection.</p>
-				<p>For added peace of mind all rooms at Riverview Aged Care Plus Centre have 24 hour emergency call systems.</p>
-				<br>
-				<h2>Dining experience</h2>
-				<p>Meal times are an important aspect of our culture. The creation of a meal and sharing it with others has significant social benefits. We encourage all our residents to share meal times but we’re happy to accommodate residents who are unable or would prefer to eat in their rooms.</p>
-				<p>All meals at Riverview Gardens Aged Care Plus Centre are freshly prepared onsite by our professional catering team. Our menus are changed seasonally and offer residents plenty of choice, with a variety of fresh and tasty meals to choose from.</p>
-				<p>We are able to cater for special dietary requirements and happily accommodate individual likes and dislikes.</p>
-			</div>
-			<div class="half">
-				<h2>Lifestyle and wellbeing</h2>
-				<p>Riverview Gardens Aged Care Plus Centre has a team of onsite specialists and compassionate care and nursing staff, available 24 hours a day.</p>
-				<p>We offer a busy social calendar with a range of lifestyle and leisure activities for residents to enjoy. Attendance at any activity is at the discretion of the resident and we hope to offer enough choice that our lifestyle program will appeal to a wide range of tastes.</p>
-				<p>Throughout the year we also arrange a number of shows for residents’ entertainment.</p>
-			</div>
-		</section>
-		<section id="spiritual">
-			<h2>What makes us <strong>different?</strong></h2>
-		</section>
-		<section>
-			<div class="half clearfix">
-				<h2 class="spiritual">Spiritual support</h2>
-				<p>Pastoral care is an integral part of the services we provide. In creating and celebrating our vibrant Christian community, our goal is to bring daily purpose, quality and meaning to life for everyone who lives at Riverview Gardens Aged Care Plus Centre.</p>
-				<p>Our Salvation Army Chaplain is available to residents 24 hours a day.</p>
-			</div>
-			<div class="half">
-				<h2>Family engagement</h2>
-				<p>We encourage family members to remain an active part of residents’ lives and we welcome friends and family members at any time.</p>
-				<p>To ensure family members remain informed we hold regular family meetings. The Centre Manager is also available should you have any questions or concerns.</p>
-				<br>
-				<h2>Meet our management team</h2>
-				<p>Riverview Gardens Aged Care Plus Centre is led by our Centre Manager. Together with our Chaplain and Care Manager we ensure every resident receives a high standard of care that meets their physical, emotional and spiritual needs.</p>
-			</div>
-		</section>
-		<img src="images/DAY%202%20BRISBANE%20106.jpg" alt="volunteering">
-		<section class="how-to-enter">
-			<div class="full">
-				<h2>How to enter Riverview Gardens Aged Care Plus Centre</h2>
-			</div>
-			<div class="half">
-				<p>You will need a My Aged Care client record and an aged care assessment to enter in to any aged care centre. Please call the government information line on <strong>1800 200 422</strong> to register with My Aged Care and receive a referral to Riverview Gardens Aged Care Plus Centre. Come and meet our care team and vibrant resident community.</p>
-			</div>
-			<div class="half">
-				<p>Tours at Riverview Gardens Aged Care Plus Centre can be arranged at a convenient time during the week. To schedule a private tour please call <strong>07 3282 1000</strong> or email <strong>acp.enquiries@aue.salvationarmy.org</strong></p>
-			</div>
-		</section>
+			<section class="centre-managers-quote">
+				<div>
+					<h3>“I welcome you to join us at Riverview Gardens Aged Care Plus Centre and explore our lovely grounds. Meet our wonderful team and experience the care and community provided in our Centre.”<br><br><small>Darryl Tocchetti, Centre Manager</small></h3>
+				</div>
+			</section>
+			<img src="images/DAY-2-BRISBANE-119.jpg" alt="entertainment">
+			<section id="lifestyle" class="centre row clearfix">
+				<div class="half">
+					<h2>Suites</h2>
+					<p>The single rooms at Riverview Gardens Aged Care Plus Centre have been designed with residents’ comfort and security in mind. All rooms are fully furnished and have a telephone connection and television connection.</p>
+					<p>For added peace of mind all rooms at Riverview Aged Care Plus Centre have 24 hour emergency call systems.</p>
+					<br>
 
+					<h2>Lifestyle and wellbeing</h2>
+					<p>Riverview Gardens Aged Care Plus Centre has a team of onsite specialists and compassionate care and nursing staff, available 24 hours a day.</p>
+					<p>We offer a busy social calendar with a range of lifestyle and leisure activities for residents to enjoy. Attendance at any activity is at the discretion of the resident and we hope to offer enough choice that our lifestyle program will appeal to a wide range of tastes.</p>
+					<p>Throughout the year we also arrange a number of shows for residents’ entertainment.</p>
+
+				</div>
+				<div class="half">
+					<h2>Dining experience</h2>
+					<p>Meal times are an important aspect of our culture. The creation of a meal and sharing it with others has significant social benefits. We encourage all our residents to share meal times but we’re happy to accommodate residents who are unable or would prefer to eat in their rooms.</p>
+					<p>All meals at Riverview Gardens Aged Care Plus Centre are freshly prepared onsite by our professional catering team. Our menus are changed seasonally and offer residents plenty of choice, with a variety of fresh and tasty meals to choose from.</p>
+					<p>We are able to cater for special dietary requirements and happily accommodate individual likes and dislikes.</p>
+				</div>
+			</section>
+			<section id="spiritual">
+				<h2>What makes us <strong>different?</strong></h2>
+			</section>
+			<section>
+				<div class="half clearfix">
+					<h2 id="spirit">Spiritual support</h2>
+					<p>Pastoral care is an integral part of the services we provide. In creating and celebrating our vibrant Christian community, our goal is to bring daily purpose, quality and meaning to life for everyone who lives at Riverview Gardens Aged Care Plus Centre.</p>
+					<p>Our Salvation Army Chaplain is available to residents 24 hours a day.</p>
+				</div>
+				<div class="half">
+					<h2>Family engagement</h2>
+					<p>We encourage family members to remain an active part of residents’ lives and we welcome friends and family members at any time.</p>
+					<p>To ensure family members remain informed we hold regular family meetings. The Centre Manager is also available should you have any questions or concerns.</p>
+					<br>
+					<h2>Meet our management team</h2>
+					<p>Riverview Gardens Aged Care Plus Centre is led by our Centre Manager. Together with our Chaplain and Care Manager we ensure every resident receives a high standard of care that meets their physical, emotional and spiritual needs.</p>
+				</div>
+			</section>
+			<img src="images/DAY-2-BRISBANE-106.jpg" alt="volunteering">
+			<section id="how-to-enter" class="clearfix">
+				<div class="full">
+					<h2>How to enter Riverview Gardens Aged Care Plus Centre</h2>
+				</div>
+				<div class="half">
+					<p>You will need a My Aged Care client record and an aged care assessment to enter in to any aged care centre. Please call the government information line on <strong>1800 200 422</strong> to register with My Aged Care and receive a referral to Riverview Gardens Aged Care Plus Centre. Come and meet our care team and vibrant resident community.</p>
+				</div>
+				<div class="half">
+					<p>Tours at Riverview Gardens Aged Care Plus Centre can be arranged at a convenient time during the week. To schedule a private tour please call <strong>07 3282 1000</strong> or email <strong><a class="email" href="mailto:acp.enquiries@aue.salvationarmy.org">acp.enquiries@aue.salvationarmy.org</a></strong></p>
+				</div>
+			</section>
+
+		</div>
 	</div>
+
 	<!-- end of container -->
 	<div class="foot">
 		<footer>
 			<div>
-				<a href="#home">Home</a>
-				<span>To find out more call <strong>1300 111 227</strong> or email <strong>agedcareplus.salvos.org.au</strong></span>
+				<span id="contact">To find out more call <strong>1300 111 227</strong> or</span>
+				<br>
+				<span>visit <strong>agedcareplus.salvos.org.au</strong></span>
 			</div>
 		</footer>
 	</div>
 	<!-- end of foot -->
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 
 </html>

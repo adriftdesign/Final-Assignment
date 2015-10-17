@@ -20,20 +20,32 @@
 	*zoom: 1;
 }
 
-
-/* 
-
 @font-face {
-	font-family: clarendon;
-	src: url("../fonts/clarendon.ttf");
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
-ADD IN FONTS FROM WORK */
 
-#spiritual {
-	background: url("../images/DAY%202%20BRISBANE%20435.jpg") center center no-repeat;
+/* ADD IN FONTS FROM WORK */
+
+#construction {
+	background: url("../images/DAY-2-BRISBANE-435.jpg") center center no-repeat;
 	width: 100%;
-	height: 60rem;
+	height: 52rem;
+}
+
+#construction h2 {
+	position: relative;
+	left: 35rem;
+	top: 22rem;
+	width: 25rem;
+}
+
+#locations {
+	background: url("../images/MAP-of-centres.svg") left center no-repeat;
+	width: 100%;
+	height: 48rem;
+	background-color: #fff;
 }
 
 #spiritual h2 {
@@ -41,6 +53,12 @@ ADD IN FONTS FROM WORK */
 	left: 35rem;
 	top: 22rem;
 	width: 25rem;
+}
+
+#spiritual {
+	background: url("../images/DAY-2-BRISBANE-435.jpg") center center no-repeat;
+	width: 100%;
+	height: 52rem;
 }
 
 header {
@@ -54,8 +72,11 @@ header {
 }
 
 body {
-	font-size: 20px;
+	font-family: Helvetica Neue;
+	font-size: 1.125rem;
+	/* 18pt / 16pt */
 	background-color: #d9d9d9;
+	line-height: 1.25rem;
 }
 
 h1 {
@@ -63,28 +84,42 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-family: Palatino;
+	font-size: 1.75rem;
+	/* 28pt / 16pt */
+	line-height: 2rem;
 	color: #55a51c;
 	padding: 1rem;
 }
 
-.how-to-enter h2 {
-	color: #fff;
+h5 {
+	font-family: Palatino;
+	font-size: 1.25rem;
+	/* 28pt / 16pt */
+	line-height: 2rem;
+	color: #55a51c;
+	padding-left: 2rem;
 }
 
 .three-fifth h2 {
-	color: #55a51c;
+	color: #fff;
 }
 
 h3 {
-	font-size: 2rem;
+	font-family: Palatino;
+	font-size: 2.25rem;
+	/* 36pt / 16pt */
+	line-height: 2.5rem;
 	font-style: italic;
 	color: #fff;
 	text-align: center;
-	padding: 6em;
+	padding: 4em;
 }
 
 small {
+	font-family: Palatino;
+	font-size: 1.5rem;
+	/* 24pt / 16pt */
 	text-align: center;
 }
 
@@ -93,12 +128,27 @@ h2,
 .nav {
 	text-align: center;
 	margin-top: 0px;
+	text-decoration-color: #191919;
 }
 
-.suites {
+ul li {
+	font-size: .875rem;
+	/* 15pt / 16pt */
 	text-align: center;
-	max-height: 20em;
-	padding: 1em;
+	margin-top: 0px;
+	text-decoration-color: #191919;
+}
+
+ol li {
+	font-size: 1.125rem;
+	/* 18pt / 16pt */
+	text-align: left;
+	margin-top: 0px;
+	text-decoration-color: #191919;
+}
+
+#lifestlye {
+	padding-top: 5rem;
 }
 
 .centre-managers-quote {
@@ -112,8 +162,8 @@ p .centre-managers-quote {
 }
 
 img {
-	width: 100%;
-	margin: 0;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .rvgacp {
@@ -155,44 +205,18 @@ img {
 .full {
 	width: 100%;
 	float: left;
-	padding: 1.5rem;
-}
-
-.how-to-enter {
-	background-color: #55a51c;
-	color: #fff;
-	min-height: 22rem;
-}
-
-.how-to-enter .half {
-	background-color: #55a51c;
-	width: 50%;
+	padding: 1rem;
 }
 
 .full img {
-	width: 10rem;
+	width: 100%;
 	float: left;
 	max-height: 5rem;
-}
-
-.three-fifth .full {
-	background-color: #eee8c5;
-	padding: 1rem;
 }
 
 ol {
 	list-style: disc;
 	padding-left: 2rem;
-}
-
-li {
-	color: #55a51c;
-	/* bullet color */
-}
-
-li span {
-	color: #191919;
-	/* text color */
 }
 
 .three-fifth {
@@ -201,6 +225,49 @@ li span {
 	padding: 3rem;
 	background-color: #55a51c;
 	color: #fff;
+}
+
+#locations .three-fifth {
+	background-color: #fff;
+	color: #191919;
+	padding: 1rem;
+}
+
+#locations .two-fifth {
+	background-color: transparent;
+}
+
+#locations h2 {
+	color: #55a51c;
+	text-align: left;
+	padding-left: 2rem;
+}
+
+#locations li {
+	font-size: .75rem;
+	/*10pt / 16pt */
+	color: #191919;
+	text-align: left;
+}
+
+#locations h4 {
+	color: #e70033;
+	font-size: .875rem;
+	font-style: bold;
+}
+
+#locations a {
+	color: #e70033;
+	font-size: .875rem;
+}
+
+#locations a:hover {
+	color: #55a51c;
+	font-style: bold;
+}
+
+#locations .half {
+	padding: 1rem;
 }
 
 .two-fifth {
@@ -233,7 +300,9 @@ li span {
 }
 
 .row .quarter {
-	height: 5rem;
+	height: 4.5rem;
+	width: 10rem;
+	vertical-align: middle;
 }
 
 .content .half {
@@ -243,17 +312,41 @@ li span {
 }
 
 .nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 2.075rem;
+	line-height: .93rem;
+}
+
+.nav {
 	display: inline-block;
 	text-align: right;
 	font-size: 1rem;
-}
-
-a:hover {
-	color: #fcb073;
-}
-
-.nav span {
 	cursor: pointer;
+}
+
+.nav a:hover {
+	background-color: #55a51c;
+	color: #fff;
+}
+
+.email {
+	color: #fff;
+	text-decoration: none;
+}
+
+.email:hover {
+	color: #191919;
 }
 
 .three-quarter span {
@@ -273,12 +366,22 @@ a:hover {
 	margin-right: 5%;
 }
 
-.features {
-	float: right;
+#filter-carousel img {
+	padding-top: 5rem;
 }
 
-#home {
-	margin-top: 5rem;
+.logo img {
+	width: auto;
+	margin: auto;
+}
+
+.container img {
+	width: 100%;
+	margin-bottom: -.25rem;
+}
+
+#volunteer {
+	margin-top: -.25rem;
 }
 
 .foot {
@@ -287,22 +390,112 @@ a:hover {
 }
 
 footer {
-	height: 5rem;
+	height: 6rem;
 	width: 90%;
 	margin: 0 5% 0 5%;
 	padding-top: 2rem;
 	background-color: #191919;
 }
 
+a {
+	text-decoration: none;
+}
+
 footer a {
 	margin: 1rem;
 	text-decoration: none;
 	text-align: justify;
-	color: white;
+	color: #fff;
 }
 
 footer span {
+	font-family: Palatino;
+	font-size: 1rem;
+	/* 16pt / 16pt */
+	text-align: center;
 	color: #fff;
 	float: right;
 	margin-right: 1rem;
+}
+
+#how-to-enter h2 {
+	color: #fff;
+}
+
+#how-to-enter {
+	background-color: #55a51c;
+	color: #fff;
+}
+
+#how-to-enter .half {
+		background-color: #55a51c;
+
+		color: #fff;
+	width: 50%;
+	padding: 3rem;
+	padding-top: 0;
+}
+
+
+/*
+.read-more,
+.read-more a {
+	margin-top: 30px;
+}
+
+.read-more a {
+	color: #043049;
+	font-weight: 600;
+	display: block;
+	text-align: right;
+}
+
+.read-more p {
+	display: none;
+}
+*/
+
+#menu-bar {
+	height: 2rem;
+	width: 100%;
+	background-color: #666666;
+	margin-top: 5rem;
+	text-align: center;
+	display: none;
+}
+
+#menu-bar a {
+	color: #fff;
+	align-content: center;
+	padding: .575rem 2rem;
+}
+
+
+/* Slick additinal css */
+
+.carousel {
+	max-width: 80rem;
+	margin: 0 0;
+}
+
+.carousel img {
+	width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: #222;
+}
+
+
+/* There is a User Agent Style in Chrome that gives two pillars when we
+change slide.  This selector removes the outline
+*/
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.slick-center {
+	transform: scale(1.2);
 }
