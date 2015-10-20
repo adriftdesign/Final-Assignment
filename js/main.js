@@ -21,13 +21,38 @@
 
 			if (e.target.innerHTML !== 'Locations') {
 				e.preventDefault();
-
 			}
 
 			if (e.target.innerHTML !== 'Menu' || e.target.innerHTML !== 'Locations') {
 				$('#menu-bar').hide();
 			}
 		});
+
+		function check(form) { /*function to check email address*/
+			/*the following code checkes whether the entered email address is authorised*/
+			var alert;
+
+			if (form.emailadd.value === "damien.burnham@aue.salvationarmy.org") {
+				alert("Success - - loading Aged Care Plus Locations page");
+
+				window.location.href = ('http://locations.html');
+			} else {
+				window.alert('Unauthorised email address'); /*displays error message*/
+			}
+		}
+
+		/* Hamburger effect */
+		$(document).ready(function () {
+			/* Find the hamburger li and attach a click handler */
+			$('#navigation ul:first-child').click(function () {
+				/* toggle the class menu-expanded on the ul
+				 ** be careful with the "this" context as our selector is a pseudo element and "this" refers to the ul
+				 **/
+				$(this).toggleClass('menu-expanded');
+			});
+		});
+		/* I would like to add in an input button which references and if else statement with a list of emial addresses that are able to have access to the wesite. This will allow a form of security to the site even though all the information contained within is accessable to the public. */
+
 
 		/* Autoplay 3 seconds below */
 		$('.carousel').slick({

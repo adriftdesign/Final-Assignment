@@ -1,4 +1,4 @@
-*,
+	*,
 *:before,
 *:after {
 	-moz-box-sizing: border-box;
@@ -23,6 +23,15 @@
 @font-face {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	{
+		font-family: HelveticaNeueLT;
+		src: url("../fonts/HelveticaNeueLT-Medium.ttf");
+		font-weight: medium;
+		src: url("../fonts/HelveticaNeueLT-lightitalic.ttf");
+		font-weight: italic;
+		src: url("../fonts/HelveticaNeueLT-light.ttf");
+		font-weight: light;
+	}
 }
 
 
@@ -41,10 +50,35 @@
 	width: 25rem;
 }
 
+#login {
+	background-color: #fff.
+	/* background: url("../images/DAY-2-BRISBANE-435.jpg") center center no-repeat; */
+	width: 100%;
+	height: 52rem;
+	text-align: center;
+}
+
+#login img {
+	margin-top: 5rem;
+	margin-bottom: 3rem;
+	width: 100%;
+	max-height: 10rem;
+}
+
+#login h4 {
+	margin: 1rem;
+}
+
+form {
+	position: static;
+	text-align: center;
+	align-content: center;
+}
+
 #locations {
 	background: url("../images/MAP-of-centres.svg") left center no-repeat;
 	width: 100%;
-	height: 48rem;
+	height: 50rem;
 	background-color: #fff;
 }
 
@@ -63,16 +97,19 @@
 
 header {
 	position: fixed;
-	height: 280px;
 	margin: 0 5%;
 	width: 90%;
-	background: #fff url("images/DAY%202%20BRISBANE%20001.jpg") top center no-repeat fixed;
+	background: #fff;
 	max-height: 5rem;
 	max-width: 80rem;
 }
 
+html {
+	background-color: #fff;
+}
+
 body {
-	font-family: Helvetica Neue;
+	font-family: HelveticaNeue;
 	font-size: 1.125rem;
 	/* 18pt / 16pt */
 	background-color: #d9d9d9;
@@ -166,12 +203,19 @@ img {
 	margin: 0 auto;
 }
 
-.rvgacp {
+#centrelogo {
 	float: left;
+	max-height: 4rem;
 }
 
-.acp {
+#acp {
 	float: left;
+	max-height: 4rem;
+}
+
+#acp img {
+	width: auto;
+	margin: auto;
 }
 
 .container {
@@ -205,7 +249,7 @@ img {
 .full {
 	width: 100%;
 	float: left;
-	padding: 1rem;
+	padding: .5rem;
 }
 
 .full img {
@@ -228,13 +272,19 @@ ol {
 }
 
 #locations .three-fifth {
-	background-color: #fff;
+	background-color: transparent;
 	color: #191919;
 	padding: 1rem;
 }
 
 #locations .two-fifth {
 	background-color: transparent;
+}
+
+#locations .half {
+	background-color: transparent;
+	padding: 1rem;
+	min-width: 20rem;
 }
 
 #locations h2 {
@@ -264,10 +314,6 @@ ol {
 #locations a:hover {
 	color: #55a51c;
 	font-style: bold;
-}
-
-#locations .half {
-	padding: 1rem;
 }
 
 .two-fifth {
@@ -326,6 +372,7 @@ ol {
 	display: inline-block;
 	padding: 2.075rem;
 	line-height: .93rem;
+	color: #191919;
 }
 
 .nav {
@@ -340,12 +387,12 @@ ol {
 	color: #fff;
 }
 
-.email {
+a .email {
 	color: #fff;
 	text-decoration: none;
 }
 
-.email:hover {
+a .email:hover {
 	color: #191919;
 }
 
@@ -399,8 +446,12 @@ footer {
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
 
+a:hover {
+	color: #191919;
+}
 footer a {
 	margin: 1rem;
 	text-decoration: none;
@@ -428,32 +479,16 @@ footer span {
 }
 
 #how-to-enter .half {
-		background-color: #55a51c;
-
-		color: #fff;
+	background-color: #55a51c;
+	color: #fff;
 	width: 50%;
 	padding: 3rem;
 	padding-top: 0;
 }
 
-
-/*
-.read-more,
-.read-more a {
-	margin-top: 30px;
-}
-
-.read-more a {
-	color: #043049;
-	font-weight: 600;
-	display: block;
-	text-align: right;
-}
-
-.read-more p {
+#hamburger {
 	display: none;
 }
-*/
 
 #menu-bar {
 	height: 2rem;
@@ -468,6 +503,26 @@ footer span {
 	color: #fff;
 	align-content: center;
 	padding: .575rem 2rem;
+}
+
+form .email {
+	width: 20rem;
+	height: 2rem;
+	font-size: 1rem;
+	hover: none;
+}
+
+form .login,
+.reset {
+	height: 2rem;
+	width: 5rem;
+	color: #fff;
+	background-color: #e70033;
+}
+
+form .login:hover,
+.reset:hover {
+	background-color: #55a51c;
 }
 
 
@@ -499,3 +554,86 @@ change slide.  This selector removes the outline
 .slick-center {
 	transform: scale(1.2);
 }
+
+#navigation li strong a {}
+
+nav li:first-child {
+	/* the hamburger li */
+	float: right;
+	display: none;
+}
+
+
+/* ALL THE MEDIA QUERRIES NEED TO BE WORKED OUT note to self  */
+
+@media screen and (max-width: 1050px) {
+	#navigation li {
+		display: none;
+		margin: 1.5%;
+	}
+	#hamburger {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#locations {
+		background: url("../images/MAP-of-centres.svg") left center no-repeat;
+		min-width: 22rem;
+		background-color: #fff;
+	}
+	#locations .half {
+		min-width: 22rem;
+	}
+	header nav {
+		display: none;
+	}
+	header {
+		height: 70px;
+	}
+	.profiles {}
+	@media screen and (max-width: 768px) {
+		.tagline {
+			display: none;
+		}
+		.tout {
+			float: none;
+			width: 100%;
+			border: 0px;
+		}
+		span {
+			display: none;
+		}
+		.blurb {
+			min-width: 200px;
+			box-shadow: none;
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.profiles {
+			min-width: 90%;
+		}
+		h1 {
+			font-size: 1em;
+		}
+	}
+	/* From here down is the media querry from Pst in relation to the hamburger function. I am yet to make this work */
+	@media screen and (max-width: 768px) {
+		/*Navigation*/
+		#navigation li:first-child {
+			/* the hamburger li */
+			display: block;
+			width: 30%;
+		}
+		.menu-expanded li {
+			display: block;
+			width: 97%;
+		}
+		/*Main and footer*/
+		#container>div+div,
+		/* select all divs that have a div immediatley before and is inside the element with the id container */
+		footer>div {
+			width: 97%;
+			/*100%-3% margins*/
+		}
+	}
