@@ -271,6 +271,14 @@ ol {
 	color: #fff;
 }
 
+.three-fifth {
+	float: left;
+	width: 60%;
+	padding: 3rem;
+	background-color: #55a51c;
+	color: #fff;
+}
+
 #locations .three-fifth {
 	background-color: transparent;
 	color: #191919;
@@ -396,7 +404,7 @@ a .email:hover {
 	color: #191919;
 }
 
-.three-quarter span {
+.three-fifth span {
 	max-height: 5rem;
 	width: 75%;
 	float: left;
@@ -407,7 +415,7 @@ a .email:hover {
 	margin: 1rem .5rem 1rem .5rem;
 }
 
-.three-quarter .row {
+.three-fifth .row {
 	width: 75%;
 	float: left;
 	margin-right: 5%;
@@ -591,15 +599,17 @@ nav li:first-child {
 	header {
 		height: 70px;
 	}
-	.profiles {}
-	@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
 		.tagline {
 			display: none;
 		}
-		.tout {
+		.half,
+		.two-fifth,
+		.three-fifth,
+		full {
 			float: none;
 			width: 100%;
-			border: 0px;
 		}
 		span {
 			display: none;
@@ -609,7 +619,8 @@ nav li:first-child {
 			box-shadow: none;
 		}
 	}
-	@media screen and (max-width: 375px) {
+	
+@media screen and (max-width: 375px) {
 		.profiles {
 			min-width: 90%;
 		}
@@ -618,7 +629,7 @@ nav li:first-child {
 		}
 	}
 	/* From here down is the media querry from Pst in relation to the hamburger function. I am yet to make this work */
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 760px) {
 		/*Navigation*/
 		#navigation li:first-child {
 			/* the hamburger li */
@@ -629,11 +640,6 @@ nav li:first-child {
 			display: block;
 			width: 97%;
 		}
-		/*Main and footer*/
 		#container>div+div,
 		/* select all divs that have a div immediatley before and is inside the element with the id container */
-		footer>div {
-			width: 97%;
-			/*100%-3% margins*/
-		}
 	}
