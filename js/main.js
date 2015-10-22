@@ -28,19 +28,6 @@
 			}
 		});
 
-		function check(form) { /*function to check email address*/
-			/*the following code checkes whether the entered email address is authorised*/
-			var alert;
-
-			if (form.emailadd.value === "damien.burnham@aue.salvationarmy.org") {
-				alert("Success - - loading Aged Care Plus Locations page");
-
-				window.location.href = ('http://locations.html');
-			} else {
-				window.alert('Unauthorised email address'); /*displays error message*/
-			}
-		}
-
 		/* Hamburger effect */
 		$(document).ready(function () {
 			/* Find the hamburger li and attach a click handler */

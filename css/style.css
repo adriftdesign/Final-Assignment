@@ -1,4 +1,4 @@
-	*,
+*,
 *:before,
 *:after {
 	-moz-box-sizing: border-box;
@@ -23,15 +23,6 @@
 @font-face {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	{
-		font-family: HelveticaNeueLT;
-		src: url("../fonts/HelveticaNeueLT-Medium.ttf");
-		font-weight: medium;
-		src: url("../fonts/HelveticaNeueLT-lightitalic.ttf");
-		font-weight: italic;
-		src: url("../fonts/HelveticaNeueLT-light.ttf");
-		font-weight: light;
-	}
 }
 
 
@@ -75,13 +66,6 @@ form {
 	align-content: center;
 }
 
-#locations {
-	background: url("../images/MAP-of-centres.svg") left center no-repeat;
-	width: 100%;
-	height: 50rem;
-	background-color: #fff;
-}
-
 #spiritual h2 {
 	position: relative;
 	left: 35rem;
@@ -109,7 +93,7 @@ html {
 }
 
 body {
-	font-family: HelveticaNeue;
+	font-family: Helvetica Neue, helvetica, arial, serif;
 	font-size: 1.125rem;
 	/* 18pt / 16pt */
 	background-color: #d9d9d9;
@@ -121,7 +105,7 @@ h1 {
 }
 
 h2 {
-	font-family: Palatino;
+	font-family: Palatino, sans-serif;
 	font-size: 1.75rem;
 	/* 28pt / 16pt */
 	line-height: 2rem;
@@ -130,7 +114,7 @@ h2 {
 }
 
 h5 {
-	font-family: Palatino;
+	font-family: Palatino, sans-serif;
 	font-size: 1.25rem;
 	/* 28pt / 16pt */
 	line-height: 2rem;
@@ -143,7 +127,7 @@ h5 {
 }
 
 h3 {
-	font-family: Palatino;
+	font-family: Palatino, sans-serif;
 	font-size: 2.25rem;
 	/* 36pt / 16pt */
 	line-height: 2.5rem;
@@ -154,7 +138,7 @@ h3 {
 }
 
 small {
-	font-family: Palatino;
+	font-family: Palatino, sans-serif;
 	font-size: 1.5rem;
 	/* 24pt / 16pt */
 	text-align: center;
@@ -192,10 +176,6 @@ ol li {
 	background-color: #55a51c;
 	min-height: 20em;
 	text-align: justify;
-}
-
-p .centre-managers-quote {
-	font-size: 2px;
 }
 
 img {
@@ -263,20 +243,9 @@ ol {
 	padding-left: 2rem;
 }
 
-.three-fifth {
-	float: left;
-	width: 60%;
-	padding: 3rem;
-	background-color: #55a51c;
-	color: #fff;
-}
-
-.three-fifth {
-	float: left;
-	width: 60%;
-	padding: 3rem;
-	background-color: #55a51c;
-	color: #fff;
+#locations .map {
+	max-width: 80rem;
+	background-color: #fff;
 }
 
 #locations .three-fifth {
@@ -287,11 +256,12 @@ ol {
 
 #locations .two-fifth {
 	background-color: transparent;
+	padding: 0;
 }
 
 #locations .half {
 	background-color: transparent;
-	padding: 1rem;
+	padding: .5rem;
 	min-width: 20rem;
 }
 
@@ -299,6 +269,8 @@ ol {
 	color: #55a51c;
 	text-align: left;
 	padding-left: 2rem;
+	height: 5rem;
+	margin: auto;
 }
 
 #locations li {
@@ -340,9 +312,16 @@ ol {
 }
 
 .third {
-	background-color: aquamarine;
-	width: 33.3%;
+	width: 32%;
 	float: left;
+	background-color: #fff;
+}
+
+.two-third {
+	background-color: #fff;
+	width: 68%;
+	float: left;
+	padding: 1rem;
 }
 
 .quarter {
@@ -404,6 +383,14 @@ a .email:hover {
 	color: #191919;
 }
 
+.three-fifth {
+	float: left;
+	width: 60%;
+	padding: 3rem;
+	background-color: #55a51c;
+	color: #fff;
+}
+
 .three-fifth span {
 	max-height: 5rem;
 	width: 75%;
@@ -460,6 +447,7 @@ a {
 a:hover {
 	color: #191919;
 }
+
 footer a {
 	margin: 1rem;
 	text-decoration: none;
@@ -477,11 +465,18 @@ footer span {
 	margin-right: 1rem;
 }
 
-#how-to-enter h2 {
+#how-to-enter {
+	background-color: #55a51c;
+	color: #fff;
+	height: 17rem;
+}
+
+#how-to-enter .full {
+	background-color: #55a51c;
 	color: #fff;
 }
 
-#how-to-enter {
+#how-to-enter h2 {
 	background-color: #55a51c;
 	color: #fff;
 }
@@ -494,8 +489,24 @@ footer span {
 	padding-top: 0;
 }
 
-#hamburger {
+.nav .line {
+	width: 2em;
+	height: .25em;
+	background: #fff;
+	border-radius: 1em;
+	margin-top: .3em;
+}
+
+.nav .line:first-of-type {
+	margin-top: .7em;
+}
+
+.nav li:first-of-type {
 	display: none;
+	height: 3rem;
+	min-width: 3rem;
+	background-color: #55a51c;
+	border-radius: .25em;
 }
 
 #menu-bar {
@@ -563,14 +574,6 @@ change slide.  This selector removes the outline
 	transform: scale(1.2);
 }
 
-#navigation li strong a {}
-
-nav li:first-child {
-	/* the hamburger li */
-	float: right;
-	display: none;
-}
-
 
 /* ALL THE MEDIA QUERRIES NEED TO BE WORKED OUT note to self  */
 
@@ -579,7 +582,7 @@ nav li:first-child {
 		display: none;
 		margin: 1.5%;
 	}
-	#hamburger {
+	.nav li:first-of-type {
 		display: block;
 	}
 }
@@ -599,47 +602,75 @@ nav li:first-child {
 	header {
 		height: 70px;
 	}
-
-@media screen and (max-width: 768px) {
+	.centre-managers-quote h3 {
+		font-family: Palatino;
+		font-size: 2.25rem;
+		/* 36pt / 16pt */
+		line-height: 2.5rem;
+		font-style: italic;
+		color: #fff;
+		text-align: center;
+		padding: 1em;
+	}
+	@media screen and (max-width: 768px) {
 		.tagline {
 			display: none;
+		}
+		.content .half,
+		.content .two-fifth,
+		.content .three-fifth,
+		.content full {
+			float: none;
+			width: 100%;
 		}
 		.half,
 		.two-fifth,
 		.three-fifth,
-		full {
+		.full {
 			float: none;
 			width: 100%;
 		}
-		span {
-			display: none;
-		}
-		.blurb {
-			min-width: 200px;
-			box-shadow: none;
-		}
 	}
-	
+	.third {
+		float: none;
+		min-width: 20rem;
+	}
+	.two-third {
+		float: left;
+		width: 100%;
+	}
+	span {
+		display: none;
+	}
+	.blurb {
+		min-width: 200px;
+		box-shadow: none;
+	}
+}
+
 @media screen and (max-width: 375px) {
-		.profiles {
-			min-width: 90%;
-		}
-		h1 {
-			font-size: 1em;
-		}
+	.profiles {
+		min-width: 90%;
 	}
-	/* From here down is the media querry from Pst in relation to the hamburger function. I am yet to make this work */
-	@media screen and (max-width: 760px) {
-		/*Navigation*/
-		#navigation li:first-child {
-			/* the hamburger li */
-			display: block;
-			width: 30%;
-		}
-		.menu-expanded li {
-			display: block;
-			width: 97%;
-		}
-		#container>div+div,
-		/* select all divs that have a div immediatley before and is inside the element with the id container */
+	h1 {
+		font-size: 1em;
 	}
+}
+
+
+/* From here down is the media querry from Pst in relation to the hamburger function. I am yet to make this work */
+
+@media screen and (max-width: 760px) {
+	/*Navigation*/
+	#navigation li:first-child {
+		/* the hamburger li */
+		display: block;
+		width: 30%;
+	}
+	.menu-expanded li {
+		display: block;
+		width: 97%;
+	}
+	#container>div+div,
+	/* select all divs that have a div immediatley before and is inside the element with the id container */
+}
